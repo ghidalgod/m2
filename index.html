@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+    <script src="https://js.cx/libs/animate.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Gabriela Hidalgo</title>
+    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header class="py-3"> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <img src="assets/imgs/perfil.png" alt="Logo" class="perfil d-inline-block align-text-top"> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#yo" class="nav-link text-dark">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyecto" class="nav-link text-dark">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" class="nav-link text-dark">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--¿QUIÉN SOY?-->
+    <section id="yo">
+        <div class="sub-heading" >
+            <h3 class="text-center pb-3">Acerca de mí</h3>
+            <textarea class="row pt-5 bg-body-tertiary " id="textExample" rows="12" cols="80">
+            Mi nombre es Gabriela, vivo en Villa Alemana, Región de Valparaíso, Chile y me interesó el mundo de la informática porque siento que es el futuro.
+
+            Actualmente estoy haciendo un Bootcamp de FullStack Java y quise tomar este curso para mejorar mis conocimientos y habilidades para programar.
+
+            Me gusta leer, pintar y tomar fotografías, especialmente de paisajes y, también, de lo que me llame la atención. 
+                
+                
+                                                                                                                     -Gabriela Hidalgo 
+            </textarea>
+        </div>
+        <div class="posicion py-3">
+            <button class="btn-animacion" onclick="animateText(textExample)">¡Haz click!</button>
+        </div>
+        
+    </section> 
+    <!--PROYECTOS-->
+    <section id="proyecto" class="py-5">
+        <h3 class="text-center "> Mis Proyectos Personales y Laborales</h3>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/imgs/aircraft.jpg" class="d-block w-50 h-50 img-center" alt="aircraft">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Quiero</h5>
+                    <p>Viajar y descubrir lugares</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/old.jpg" class="d-block w-50 h-50 img-center" alt="old">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Algunos Hobbies</h5>
+                    <p>Tomar fotografías y leer</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/desk.jpg" class="d-block w-50 h-50 img-center" alt="desk">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Laboralmente</h5>
+                    <p>Trabajo como Soporte Técnico</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/data.jpg" class="d-block w-50 h-50 img-center" alt="data">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Prefiero</h5>
+                    <p>Back-end</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/nz.jpg" class="d-block w-50 h-50 img-center" alt="nz">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Un objetivo logrado</h5>
+                    <p>Estudiar inglés en Nueva Zelanda</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--CONTACTO-->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Déjame un Mensaje </h2>
+                <form id="contactForm">
+                        
+                    <label for= "nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" name="nombre"  required>
+
+                    <label for= "email" class="form-label">Email</label>
+                    <input type="text" id="email" name="email"  required>
+                
+                    <label for= "mensaje" class="form-label">Déjame un mensaje</label>
+                    <textarea type="text" id="mensaje" name="mensaje" required rows="4"></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                    </form>
+                    <p id="response"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Pie de Página-->
+    <footer class="pie text-white py-3">
+        <div class="container text-center">
+            <nav class="nav justify-content-center ">
+                <a href="#yo" class="nav-link text-white">Acerca de mí</a>
+                <a href="#proyecto" class="nav-link text-white">Proyectos</a>
+                <a href="#contacto" class="nav-link text-white">Déjame un mensaje</a>
+            </nav>
+            <p class="mt-3"> ® 2024 Gabriela Hidalgo Doris. Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
